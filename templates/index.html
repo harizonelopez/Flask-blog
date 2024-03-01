@@ -24,7 +24,7 @@
         header {
             background-color: #1e2229;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
         }
 
         h1, h2 {
@@ -32,22 +32,22 @@
         }
 
         h5 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: #FF1493;
         }
 
         h6 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: green;
         }
 
         h7 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: red;
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.5;
             color: #a4acc4;
         }
 
@@ -85,11 +85,11 @@
     <header> Blog Post Editor </header>
     <section>
 
-        <h1 align="center">Create & edit your posts here</h1>
+        <h1 align="center"> Create & edit your posts here </h1>
         <section>
             <form action="/create" method="POST">
                 <div class="form-group">
-                    <label for="title">Post Title:</label>
+                    <label for="title"> Post Title: </label>
                     <input 
                         type="text" 
                         class="form-control"
@@ -99,26 +99,25 @@
                     </input>
                     <br>
                     
-                    <label for="content">Post Content:</label>
+                    <label for="content"> Post Content: </label>
                     <textarea   
                         id="content" 
                         name="content" required>
                     </textarea>
                     <br>
 
-                    <button type="submit" class="btn btn-primary">Create Post</button>
+                    <button type="submit" class="btn btn-primary"> Create Post </button>
                 </div>
             </form>
         </section>
 
-        <h5 align="center"><a href="{{ url_for('home') }}">Back to Blog Page</a></h5>
+        <h5 align="center"><a href="{{ url_for('home') }}"> Back to Blog Page </a></h5>
         
         <footer>
-            <p>&copy; 2024 Blog Post</p>
+            <p>&copy; 2024 Blog Post App </p>
         </footer>
 
     </section>
 </body>
 </html>
-
 {% endblock %}
