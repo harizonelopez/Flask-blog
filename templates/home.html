@@ -16,15 +16,13 @@
             padding: 0;
             background-color: #282c35;
             color: #fff;
-            align-items: center;
             flex-direction: column;
-            text-align: left;
         }
 
         header {
             background-color: #1e2229;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
         }
 
         h1, h2 {
@@ -32,22 +30,22 @@
         }
 
         h5 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: #FF1493;
         }
 
         h6 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: green;
         }
 
         h7 {
-            line-height: 1.6;
+            line-height: 1.5;
             color: red;
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.5;
             color: #a4acc4;
         }
 
@@ -75,16 +73,17 @@
         }
 
         a:hover {
-            border-bottom: 2px solid #FF6347;
+            border-bottom: 1px solid #FF6347;
         }
 
     </style>
 </head>
 
 <body>
-    <header> Welcome To The Flask-Blog </header>
+    <header> Welcome To The Flask-Blog App </header>
     <section>
-        <h1 align="center"> Blog posts</h1>
+        
+        <h1 align="center"> Blog Posts </h1>
         <section>
             {% for post in posts %}
                 <div>
@@ -98,11 +97,10 @@
         <button class="btn btn-primary"><a href="{{ url_for('create') }}">New post</a></button>
         
         <footer>
-            <p>&copy; 2024 Blog Post</p>
+            <p>&copy; 2024 Blog Post App</p>
         </footer>
 
     </section>
 </body>
 </html>
-
 {% endblock %}
