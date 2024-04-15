@@ -20,7 +20,7 @@ def home():
     posts = Post.query.order_by(Post.date_posted.desc()).all()
     return render_template('home.html', posts=posts)
 
-@app.route('/create', methods=['GET', 'POST'])
+@app.route('/create', methods=["GET", "POST"])
 def create():
     if request.method == 'POST':
         title = request.form['title']
